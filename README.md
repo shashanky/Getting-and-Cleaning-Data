@@ -42,4 +42,6 @@ Please install the package dplyr before running the script as it is required.
 * summary_data_info - codebook describing the data in summary_data.txt
 * summary_data_cols - file containing all the column names in summary_data.txt
 * summary_data.txt - summarised data containing the final output as required by the assignment. when reading this file use read.table with header = TRUE.
+* run_analysis.R - file that runs analysis on the data
+* download_dataset.R - file for downloading the data
 
