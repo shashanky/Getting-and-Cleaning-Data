@@ -3,7 +3,7 @@ The columns selected for the summary_data.txt file came data as explained in the
 From the 561 features in the file features.txt, all those containing “mean” and “std” (for standard deviation) were extracted. Two new columns “subject” and “activity” were added to represent the 30 subjects and the 6 activities respectively used in the study.
 
 Below is the list of columns that define the columns in the file summary_data.txt
-The summary_data.txt contains data sorted by activity and then subject for the mean of 79 variables in the data.
+The file summary_data.txt contains data sorted by activity and then subject for the mean of 79 variables in the data.
 
 activity
 Has 6 values representing activity performed by the subjects in the study
