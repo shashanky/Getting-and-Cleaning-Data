@@ -57,9 +57,9 @@ subjects_y_x <- cbind(subjects, yx)
 ## Give meaningful names to the first two variables
 ## Other variables still have their names as inherited from the original data
 
-names(subjects_y_x)[1:2] <- c("subject","activity")
-names(subjects_y_x) <- gsub('\\(\\)', '', names(subjects_y_x))
-names(subjects_y_x) <- tolower(names(subjects_y_x))   #convert to lower case
+colnames(subjects_y_x)[1:2] <- c("subject","activity")
+colnames(subjects_y_x) <- gsub('\\(\\)', '', colnames(subjects_y_x))
+colnames(subjects_y_x) <- tolower(colnames(subjects_y_x))   #convert to lower case
 
 ##Group the data by activity and subject columns and then apply the summarize_all function to get mean of each column
 ## we use the chaining technique for the dplyr functions
@@ -67,4 +67,4 @@ names(subjects_y_x) <- tolower(names(subjects_y_x))   #convert to lower case
 summary_data <- subjects_y_x %>% group_by(activity,subject) %>% summarize_all(mean)
 
 ## save the summarised tidy data in a file 
-write.table(summary_data, file = "summary_data.txt")
+write.table(summary_data, file = "summary_data.txt", row.names = FALSE)

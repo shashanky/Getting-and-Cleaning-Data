@@ -41,5 +41,5 @@ Please install the package dplyr before running the script as it is required.
 * README.md - this file
 * summary_data_info - codebook describing the data in summary_data.txt
 * summary_data_cols - file containing all the column names in summary_data.txt
-* summary_data.txt - summarised data containing the final output as required by the assignment
+* summary_data.txt - summarised data containing the final output as required by the assignment. when reading this file use read.table with header = TRUE.
 
